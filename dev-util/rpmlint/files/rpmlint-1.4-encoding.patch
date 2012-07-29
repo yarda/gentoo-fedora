@@ -1,0 +1,14 @@
+diff -up rpmlint-1.4/Filter.py.enc rpmlint-1.4/Filter.py
+--- rpmlint-1.4/Filter.py.enc	2012-01-23 09:56:03.861515705 -0800
++++ rpmlint-1.4/Filter.py	2012-01-23 09:58:36.783740193 -0800
+@@ -29,7 +29,9 @@ if sys.stdout.isatty():
+         print(s)
+ else:
+     def __print(s):
+-        print(s.encode(locale.getpreferredencoding(), "replace"))
++        if isinstance(s, unicode):
++            s = s.encode(locale.getpreferredencoding(), "replace") 
++        print(s)
+ 
+ def printInfo(pkg, reason, *details):
+     _print("I", pkg, reason, details)
