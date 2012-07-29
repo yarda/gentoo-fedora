@@ -15,7 +15,7 @@ IUSE="minimal"
 
 DEPEND="
 	app-arch/rpm
-	dev-util/krbV
+	dev-python/krbV
 	"
 RDEPEND="
 	${DEPEND}
