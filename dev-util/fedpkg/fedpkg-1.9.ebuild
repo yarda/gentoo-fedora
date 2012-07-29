@@ -27,7 +27,8 @@ DEPEND="
 	dev-python/setuptools
 	dev-python/offtrac
 	dev-util/rpkg
-	dev-python/fedora"
+	dev-python/fedora
+	dev-util/fedora-packager"
 
 src_install() {
 	distutils_src_install

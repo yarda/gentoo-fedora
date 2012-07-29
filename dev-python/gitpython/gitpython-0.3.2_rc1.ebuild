@@ -21,7 +21,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND=""
+RDEPEND="
+	dev-vcs/git
+	dev-python/gitpython"
 DEPEND="
 	${RDEPEND}
 	dev-python/nose
