@@ -2,7 +2,7 @@
 EAPI=3
 PYTHON_DEPEND="2"
 
-inherit python
+inherit eutils python
 
 DESCRIPTION="Build tool for the Fedora project"
 HOMEPAGE="https://fedorahosted.org/koji/"
