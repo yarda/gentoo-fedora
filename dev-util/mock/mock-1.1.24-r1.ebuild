@@ -24,7 +24,7 @@ RDEPEND="sys-apps/yum
 	sys-apps/usermode"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-gentoo-fix.patch
+	epatch "${FILESDIR}"/${PN}-1.1.24-gentoo-fix.patch
 }
 
 src_install() {
