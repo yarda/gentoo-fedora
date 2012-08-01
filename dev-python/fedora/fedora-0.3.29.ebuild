@@ -13,7 +13,7 @@ MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="Python modules for talking to Fedora Infrastructure Services"
 HOMEPAGE="https://fedorahosted.org/python-fedora/"
-SRC_URI="https://fedorahosted.org/releases/p/y/${MY_PN}/${MY_P}.tar.gz"
+SRC_URI="https://fedorahosted.org/releases/${MY_PN:0:1}/${MY_PN:1:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="LGPL-2"
 SLOT="0"

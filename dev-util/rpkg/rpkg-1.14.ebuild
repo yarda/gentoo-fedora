@@ -10,7 +10,7 @@ inherit distutils bash-completion-r1
 
 DESCRIPTION="Utility for interacting with rpm+git packaging systems"
 HOMEPAGE="https://fedorahosted.org/rpkg"
-SRC_URI="https://fedorahosted.org/releases/r/p/${PN}/${P}.tar.gz"
+SRC_URI="https://fedorahosted.org/releases/${PN:0:1}/${PN:1:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-2 LGPL-2"
 SLOT="0"

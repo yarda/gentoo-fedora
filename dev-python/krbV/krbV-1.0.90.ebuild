@@ -10,7 +10,7 @@ MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="Python extension module for Kerberos 5"
 HOMEPAGE="http://fedorahosted.org/python-krbV/"
-SRC_URI="http://fedorahosted.org/python-krbV/raw-attachment/wiki/Releases/${MY_P}.tar.bz2"
+SRC_URI="http://fedorahosted.org/${MY_PN}/raw-attachment/wiki/Releases/${MY_P}.tar.bz2"
 
 LICENSE="LGPL-2"
 SLOT="0"

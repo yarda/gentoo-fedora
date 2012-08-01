@@ -6,7 +6,7 @@ inherit eutils python
 
 DESCRIPTION="Build tool for the Fedora project"
 HOMEPAGE="https://fedorahosted.org/koji/"
-SRC_URI="https://fedorahosted.org/releases/k/o/koji/${P}.tar.bz2"
+SRC_URI="https://fedorahosted.org/releases/${PN:0:1}/${PN:1:1}/${PN}/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"

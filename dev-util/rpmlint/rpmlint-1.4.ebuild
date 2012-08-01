@@ -8,7 +8,7 @@ inherit eutils bash-completion-r1
 
 DESCRIPTION="Tool for checking common errors in RPM packages"
 HOMEPAGE="http://rpmlint.zarb.org/"
-SRC_URI="http://rpmlint.zarb.org/download/${P}.tar.xz"
+SRC_URI="http://${PN}.zarb.org/download/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"

@@ -13,7 +13,7 @@ MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="Python library for interacting with Bugzilla"
 HOMEPAGE="https://fedorahosted.org/python-bugzilla"
-SRC_URI="https://fedorahosted.org/releases/p/y/${MY_PN}/${MY_P}.tar.gz"
+SRC_URI="https://fedorahosted.org/releases/${MY_PN:0:1}/${MY_PN:1:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"

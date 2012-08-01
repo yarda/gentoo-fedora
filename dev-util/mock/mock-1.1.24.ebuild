@@ -8,7 +8,7 @@ inherit eutils bash-completion-r1
 
 DESCRIPTION="Create chroots and build packages in them for Fedora and RedHat"
 HOMEPAGE="http://fedorahosted.org/mock/"
-SRC_URI="https://fedorahosted.org/mock/attachment/wiki/MockTarballs/mock-${PV}.tar.xz?format=raw -> mock-${PV}.tar.xz"
+SRC_URI="https://fedorahosted.org/${PN}/attachment/wiki/MockTarballs/${P}.tar.xz?format=raw -> ${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"

@@ -10,7 +10,7 @@ inherit distutils bash-completion-r1
 
 DESCRIPTION="Fedora utility for working with dist-git"
 HOMEPAGE="https://fedorahosted.org/fedpkg"
-SRC_URI="http://fedorahosted.org/releases/f/e/${PN}/${P}.tar.bz2"
+SRC_URI="http://fedorahosted.org/releases/${PN:0:1}/${PN:1:1}/${PN}/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
