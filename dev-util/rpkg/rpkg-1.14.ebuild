@@ -18,7 +18,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	dev-python/gitpython
+	dev-python/git-python
 	dev-python/argparse
 	dev-python/pycurl
 	dev-util/koji
