@@ -30,7 +30,7 @@ RDEPEND="
 	net-misc/openssh"
 DEPEND="
 	dev-python/setuptools
-	dev-python/gitpython
+	dev-python/git-python
 	dev-python/pycurl
 	dev-util/koji
 	dev-python/argparse
