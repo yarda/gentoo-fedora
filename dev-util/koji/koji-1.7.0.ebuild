@@ -20,6 +20,7 @@ DEPEND="
 RDEPEND="
 	${DEPEND}
 	dev-python/pyopenssl
+	dev-python/urlgrabber
 	"
 
 src_prepare() {

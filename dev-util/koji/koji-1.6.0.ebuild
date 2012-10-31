@@ -15,10 +15,12 @@ IUSE="minimal"
 
 DEPEND="
 	app-arch/rpm
+	dev-python/krbV
 	"
 RDEPEND="
 	${DEPEND}
 	dev-python/pyopenssl
+	dev-python/urlgrabber
 	"
 
 src_prepare() {
