@@ -21,6 +21,7 @@ RDEPEND="
 	${DEPEND}
 	dev-python/pyopenssl
 	dev-python/urlgrabber
+	sys-apps/yum
 	"
 
 src_prepare() {
