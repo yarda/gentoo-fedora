@@ -18,8 +18,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="
-	dev-python/gitpython
-	dev-python/argparse
+	dev-python/git-python
+	virtual/python-argparse
 	dev-python/pycurl
 	dev-util/koji
 	app-arch/rpm[python]
@@ -30,10 +30,10 @@ RDEPEND="
 	net-misc/openssh"
 DEPEND="
 	dev-python/setuptools
-	dev-python/gitpython
+	dev-python/git-python
 	dev-python/pycurl
 	dev-util/koji
-	dev-python/argparse
+	virtual/python-argparse
 	dev-python/kitchen"
 
 src_install() {

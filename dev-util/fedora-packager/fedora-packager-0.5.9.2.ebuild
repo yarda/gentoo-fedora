@@ -16,7 +16,7 @@ IUSE=""
 DEPEND=""
 RDEPEND="
 	${DEPEND}
-	dev-python/argparse
+	virtual/python-argparse
 	dev-python/pycurl
 	dev-python/urlgrabber
 	dev-util/koji

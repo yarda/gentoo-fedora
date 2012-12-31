@@ -2,11 +2,13 @@
 EAPI=3
 PYTHON_DEPEND="2"
 
-inherit eutils python
+inherit python
 
-DESCRIPTION="Build tool for the Fedora project"
-HOMEPAGE="https://fedorahosted.org/koji/"
-SRC_URI="https://fedorahosted.org/releases/${PN:0:1}/${PN:1:1}/${PN}/${P}.tar.bz2"
+DESCRIPTION="Brew compatibility interface for Koji"
+HOMEPAGE="dont-exist"
+SRC_URI="${P}.tar.bz2"
+# Package only available on Red Hat intranet
+RESTRICT="fetch"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -14,19 +16,20 @@ KEYWORDS="~x86 ~amd64"
 IUSE="minimal"
 
 DEPEND="
-	app-arch/rpm
-	dev-python/krbV
 	"
 RDEPEND="
 	${DEPEND}
-	dev-python/pyopenssl
-	dev-python/urlgrabber
-	sys-apps/yum
+	dev-util/koji
 	"
 
+pkg_nofetch()
+{
+    einfo "Please download"
+    einfo "  - ${P}.tar.bz2"
+    einfo "from Red Hat intranet and place it in ${DISTDIR}"
+}
+
 src_prepare() {
-	epatch \
-		"${FILESDIR}"/fedora-config.patch
 	sed -i -e 's/\tinstall/\tinstall -D/' "${S}/cli/Makefile" || die
 }
 
@@ -36,7 +39,7 @@ src_compile() {
 
 src_install() {
 	if use minimal ; then
-		emake -j1 -C koji install DESTDIR="${D}" || die
+		emake -j1 -C lib install DESTDIR="${D}" || die
 		emake -j1 -C cli install DESTDIR="${D}" || die
 	else
 		emake -j1 install DESTDIR="${D}" || die
