@@ -31,14 +31,11 @@ RDEPEND=">=dev-python/turbojson-1.1.4
 	>=dev-python/ruledispatch-0.5_pre2306
 	>=dev-python/decoratortools-1.4
 	>=dev-python/configobj-4.3.2
-	|| ( =dev-lang/python-2.4*
-		( =dev-lang/python-2.5* >=dev-python/cheetah-2.0_rc7-r1 ) )
-	|| ( =dev-lang/python-2.5*
-		( =dev-lang/python-2.4* >=dev-python/celementtree-1.0.5 ) )
+	( >=dev-lang/python-2.5 >=dev-python/cheetah-2.0_rc7-r1 )
+	>=dev-lang/python-2.5
 	>=dev-python/sqlobject-0.7
 	test? ( >=dev-python/nose-0.9.1 >=dev-python/sqlalchemy-0.3.3
-		|| ( =dev-lang/python-2.5*
-			( =dev-lang/python-2.4* dev-python/pysqlite ) ) )
+		>=dev-lang/python-2.5 )
 	>=dev-python/genshi-0.3.6"
 DEPEND="${RDEPEND}
 	app-arch/zip
