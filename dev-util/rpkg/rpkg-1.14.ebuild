@@ -19,7 +19,6 @@ IUSE=""
 
 RDEPEND="
 	dev-python/git-python
-	virtual/python-argparse
 	dev-python/pycurl
 	dev-util/koji
 	app-arch/rpm[python]
@@ -33,7 +32,6 @@ DEPEND="
 	dev-python/git-python
 	dev-python/pycurl
 	dev-util/koji
-	virtual/python-argparse
 	dev-python/kitchen"
 
 src_install() {
