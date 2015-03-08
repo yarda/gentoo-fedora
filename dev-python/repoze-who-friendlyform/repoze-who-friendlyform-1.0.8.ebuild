@@ -22,7 +22,7 @@ IUSE=""
 
 RDEPEND="
 	dev-python/repoze-who
-	net-zope/zope-interface"
+	dev-python/zope-interface"
 DEPEND="
 	${RDEPEND}
 	dev-python/setuptools
