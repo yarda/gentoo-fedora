@@ -1,7 +1,9 @@
-EAPI=3
+EAPI=6
+
+PYTHON_COMPAT=( python{2_7,3_4,3_5} )
 PYTHON_DEPEND="2"
 
-inherit python
+inherit python-r1
 
 DESCRIPTION="Helper scripts for Fedora packagers"
 HOMEPAGE="https://fedorahosted.org/fedora-packager/"
