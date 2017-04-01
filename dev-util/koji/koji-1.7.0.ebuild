@@ -1,8 +1,10 @@
 
-EAPI=3
+EAPI=6
+
+PYTHON_COMPAT=( python{2_7,3_4,3_5} )
 PYTHON_DEPEND="2"
 
-inherit eutils python
+inherit eutils python-r1
 
 DESCRIPTION="Build tool for the Fedora project"
 HOMEPAGE="https://fedorahosted.org/koji/"
