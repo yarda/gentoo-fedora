@@ -1,12 +1,14 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="3"
+EAPI="6"
+
+PYTHON_COMPAT=( python{2_7,3_4,3_5} )
 PYTHON_DEPEND="2"
 SUPPORT_PYTHON_ABIS="1"
 RESTRICT_PYTHON_ABIS="3.*"
 
-inherit distutils bash-completion-r1
+inherit distutils-r1 bash-completion-r1
 
 DESCRIPTION="Fedora utility for working with dist-git"
 HOMEPAGE="https://fedorahosted.org/fedpkg"
@@ -31,7 +33,7 @@ DEPEND="
 	dev-util/fedora-packager"
 
 src_install() {
-	distutils_src_install
+	distutils-r1_src_install
 	rm -rf "${D}"etc/bash_completion.d || die
 	newbashcomp src/fedpkg.bash ${PN}
 }

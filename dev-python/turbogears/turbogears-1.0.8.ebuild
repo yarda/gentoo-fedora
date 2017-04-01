@@ -2,10 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-python/turbogears/turbogears-1.0.8.ebuild,v 1.4 2011/04/12 16:22:22 arfrever Exp $
 
-EAPI="3"
+EAPI="6"
+
+PYTHON_COMPAT=( python{2_7,3_4,3_5} )
 PYTHON_DEPEND="2"
 
-inherit distutils
+inherit distutils-r1
 
 KEYWORDS="~x86 ~amd64"
 
