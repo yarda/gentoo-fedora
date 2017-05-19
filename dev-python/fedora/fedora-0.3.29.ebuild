@@ -27,7 +27,7 @@ RDEPEND="
 	dev-python/turbogears
 	dev-python/sqlalchemy
 	dev-python/decorator
-	dev-python/bugzilla
+	dev-python/python-bugzilla
 	dev-python/feedparser
 	dev-python/mako
 	dev-python/repoze-who-friendlyform
