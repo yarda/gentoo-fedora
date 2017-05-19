@@ -2,7 +2,6 @@
 EAPI=6
 
 PYTHON_COMPAT=( python{2_7,3_4,3_5} )
-PYTHON_DEPEND="2"
 
 inherit python-r1
 
