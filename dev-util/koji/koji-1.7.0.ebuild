@@ -29,6 +29,7 @@ src_prepare() {
 	epatch \
 		"${FILESDIR}"/fedora-config.patch
 	sed -i -e 's/\tinstall/\tinstall -D/' "${S}/cli/Makefile" || die
+	eapply_user
 }
 
 src_compile() {
