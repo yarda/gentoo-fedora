@@ -5,11 +5,9 @@ EAPI="6"
 
 PYTHON_COMPAT=( python{2_7,3_4,3_5} )
 
-# no source releases, grab from git
-EGIT_REPO_URI="git://git.fedorahosted.org/git/${PN}"
-EGIT_COMMIT="${PV}"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="Trac xmlrpc library"
 HOMEPAGE="http://fedorahosted.org/offtrac"
